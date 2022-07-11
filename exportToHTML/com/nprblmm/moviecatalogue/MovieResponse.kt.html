@@ -1,0 +1,32 @@
+<html>
+<head>
+<title>MovieResponse.kt</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<style type="text/css">
+.s0 { color: #cc7832;}
+.s1 { color: #a9b7c6;}
+.s2 { color: #6a8759;}
+</style>
+</head>
+<body bgcolor="#2b2b2b">
+<table CELLSPACING=0 CELLPADDING=5 COLS=1 WIDTH="100%" BGCOLOR="#606060" >
+<tr><td><center>
+<font face="Arial, Helvetica" color="#000000">
+MovieResponse.kt</font>
+</center></td></tr></table>
+<pre><span class="s0">package </span><span class="s1">com.nprblmm.moviecatalogue</span>
+
+<span class="s1">import android.os.Parcelable</span>
+<span class="s1">import com.google.gson.annotations.SerializedName</span>
+<span class="s1">import kotlinx.android.parcel.Parcelize</span>
+
+<span class="s1">@Parcelize</span>
+<span class="s1">data </span><span class="s0">class </span><span class="s1">MovieResponse(</span>
+    <span class="s1">@SerializedName(</span><span class="s2">&quot;results&quot;</span><span class="s1">)</span>
+    <span class="s0">val </span><span class="s1">movies : List&lt;Movie&gt;</span>
+
+<span class="s1">) : Parcelable {</span>
+    <span class="s1">constructor() : </span><span class="s0">this</span><span class="s1">(mutableListOf())</span>
+<span class="s1">}</span></pre>
+</body>
+</html>
